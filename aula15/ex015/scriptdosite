@@ -1,0 +1,28 @@
+function checar(){
+    var inicio = document.getElementById('inicio2')
+    var fim = document.getElementById('fim2')
+    var passo = document.getElementById('passo2')
+    var txt = document.getElementById('resultado')
+    var inicionum = Number(inicio.value)
+    var fimnum = Number(fim.value)
+    var passonum = Number(passo.value)
+
+    if (inicionum == 0 || fimnum == 0 || passonum == 0){
+        alert('erro, faltaram dados para realizar a contagem!')
+    }else if(inicionum>=fimnum){
+        alert('O inicio não pode ser maior que o fim!')   
+    }else{
+        txt.innerHTML = 'Contando: '
+    }
+    for (var c = inicionum;  c <= fimnum; c += passonum){
+        txt.innerHTML += `${c}`
+        
+        if (c+passonum>fimnum){
+        }else if (c <fimnum){
+        txt.innerHTML += `\u{1f449}` 
+        }else{
+        }
+    }
+
+
+}

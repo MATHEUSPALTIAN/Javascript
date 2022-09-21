@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(221, 214, 114);
+    font: normal 20pt arial
+}
+
+div{
+    text-align: center;
+    
+}
+header{
+    color: rgb(8, 5, 5);
+    text-align: center;
+}
+section{
+    background-color: rgb(254, 254, 225);
+    color:black;
+    border-radius: 15px;/* angulacao do background*/
+    padding: 15px;  /* aumentar a borda */
+    width: 700px;  /* tamanho do background*/
+    margin: auto;
+    box-shadow: 5px 5px 10px black;
+}
+footer{
+    color:rgb(3, 2, 2);
+    font:italic;
+    text-align: center;
+}

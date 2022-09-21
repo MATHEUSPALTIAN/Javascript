@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AULA DE INTRODUÇÃO DOM</title>
+    
+    <style>
+        body{background-color: rgb(243, 181, 65);
+            color: antiquewhite;
+            font: normal 15pt arial;
+        }
+        h1{color: rgba(27, 9, 0, 0.87);         
+        }
+        p{color: rgb(37, 8, 8);
+           font: normal 25pt arial;}
+    </style>
+</head>
+<body>  
+    
+    <h1>Aula de introdução ao DOM </h1>
+    <p id = 'msg'>Esta aula introduzirá o <strong>DOM</strong></p>
+    <p>Ola mundo </p>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[1] //caso coloque [1] puxa por exemplo so o primeiro paragrafo.
+        document.write(p1.innerText)
+        var p2 = window.document.getElementById('msg')
+        document.write(p2.innerText)
+    </script>
+</body>
+</html>

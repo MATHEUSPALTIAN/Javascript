@@ -1,0 +1,23 @@
+function verificar(){
+    var valor = document.getElementById('valor')
+    var valornum = Number(valor.value)
+    var selecao = document.getElementById('selecionar')
+    var mult = 0
+    selecao.innerHTML = '' // para zerar os resultados anteriores
+    for (var c =0; c <=10 ; c += 1){
+        var mult = valornum*c
+        let item = document.createElement('option')
+        item.value = `tab{c}`
+        item.innerHTML = `${valornum} x ${c}= ${mult}`
+        selecao.appendChild(item) 
+
+    }
+
+}
+    /*
+    var selecao = document.getElementById('selecionar')
+    for (var c =0; c <=10 ; c += 1)
+    {   var mult = valornum*c 
+        selecao.innerHTML = `${valornum} x ${c} = ${mult}`
+    }}
+    /*\*/ 

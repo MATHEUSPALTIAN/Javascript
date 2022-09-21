@@ -1,0 +1,19 @@
+body{background-color: rgb(103, 186, 189);
+    font: normal 20pt arial
+}
+header{color: white;
+    text-align: center;
+}
+section{background-color: aliceblue;
+    color:black;
+    border-radius: 15px;/* angulacao do background*/
+    padding: 15px;  /* aumentar a borda */
+    width: 500px;  /* tamanho do background*/
+    margin: auto;
+    box-shadow: 5px 5px 10px black;
+}
+footer{
+    color:white;
+    font:italic;
+    text-align: center;
+}

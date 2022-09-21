@@ -1,0 +1,86 @@
+var numero = document.getElementById('numero')
+var numeroreal = Number(numero.value)
+var listagem_num = []
+var x='java'
+x.toUpperCase()
+
+function adicionar(){
+    let numeroreal = Number(numero.value)
+
+    if (islista(numeroreal,listagem_num)){
+        alert('Numero já consta na lista')
+        }
+    else if(!isnumber1(numeroreal)) {
+        alert('Numero esta fora do alcance')
+    }else{
+        listagem_num.push(numeroreal)
+        let item = document.createElement('option') // para lista em selecao
+        //temos que criar um option para ele virar uma opcao 
+        item.value = `tab{c}` //para criar um valor relativo a cada
+        //valor digitado na lista
+        item.innerHTML = numeroreal//texto
+        lista.appendChild(item) // incluir o item na lista
+
+
+    }}
+
+function isnumber1(n){
+    if (Number(n) <= 100 && Number(n)>=1){
+        return true
+    }else{
+        return false}
+    }
+
+function islista(n,v){
+    if (v.indexOf(n) == -1){
+        return false
+    }else{
+        return true
+    }
+}
+
+
+function finalizar(){
+
+    let frase1 = document.getElementById('frase1')
+    frase1.style.background = 'rgb(255, 158, 195)'
+    let frase2 = document.getElementById('frase2')
+    frase2.style.background = 'rgb(255, 158, 195)'
+    let frase3 = document.getElementById('frase3')
+    frase3.style.background = 'rgb(255, 158, 195)'
+    let frase4 = document.getElementById('frase4')
+    frase4.style.background = 'rgb(255, 158, 195)'
+
+
+    let tamanho = listagem_num.length
+    frase1.innerHTML = `Ao todo cadastramos ${tamanho} elementos`
+    let maximo = 0
+    let menor = 100
+    let soma = 0 
+    let media = 0
+    // TIVE QUE PUXAR UM FOR DA LISTA E NAO DO SELECT
+    // =================MAXIMO======================
+    for (var pos=0; pos < listagem_num.length; pos++){
+        if (listagem_num[pos]>maximo){
+            maximo = listagem_num[pos]
+        }
+    } frase1.innerHTML = `O maior valor cadastrado é ${maximo}`
+    // =================MINIMO======================
+    for (var pos=0; pos < listagem_num.length; pos++){
+        if (listagem_num[pos]< menor){
+            menor = listagem_num[pos]
+        }
+    } frase2.innerHTML = `O menor valor cadastrado é ${menor}`
+    // =================SOMA======================
+    for (var pos=0; pos < listagem_num.length; pos++){
+        soma = listagem_num[pos] + soma
+    }frase3.innerHTML = `A soma dos valores cadastrados é ${soma}`
+        
+    // =================MEDIA======================
+    media = soma/tamanho.toFixed(2)
+    frase4.innerHTML = `A média dos valores cadastrados é ${media}`
+}
+    
+
+
+

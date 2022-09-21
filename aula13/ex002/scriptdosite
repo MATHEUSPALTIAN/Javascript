@@ -1,0 +1,27 @@
+function carregar ()
+{
+    var msg = window.document.getElementById('msg')
+    var foto = window.document.getElementById('imagem')
+    var area = window.document.getElementById('area')
+    var corpo = window.document.getElementById('corpo')
+    var data = new Date ()
+    var horario = data.getHours ()
+    msg.innerHTML = `São ${horario} horas` //TEM QUE SER = 
+
+    if (horario <= 12 && horario >=3){ 
+        foto.src='manha.png'
+        area.style.backgroundColor = 'rgb(102, 120, 157)'
+        corpo.style.backgroundColor = 'rgb(220, 221, 224)'
+        msg.style.color = 'white'
+    }else if (horario > 12 && horario <=18) {
+        foto.src='tarde.png'
+        area.style.backgroundColor = 'rgb(254, 151, 1)'
+        corpo.style.backgroundColor = 'rgb(253, 99, 25)'
+        msg.style.color = 'white'
+    }else if (horario > 18 || horario <3){  
+        foto.src='noite.png'
+        area.style.backgroundColor = 'rgb(131, 51, 28)'
+        corpo.style.backgroundColor = 'rgb(80, 31, 20)'
+        msg.style.color = 'white'
+    }
+}

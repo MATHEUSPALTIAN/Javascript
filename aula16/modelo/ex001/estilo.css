@@ -1,0 +1,55 @@
+body{background-color: rgb(103, 186, 189);
+    font: normal 15pt arial
+}
+header{color: white;
+    text-align: center;
+}
+
+div#frase1{
+    color: rgb(12, 13, 14);
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    font: normal 10pt arial
+}
+
+div#frase2{
+    color: rgb(12, 13, 14);
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    font: normal 10pt arial
+}
+
+div#frase3{
+    color: rgb(12, 13, 14);
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    font: normal 10pt arial
+}
+
+div#frase4{
+    color: rgb(12, 13, 14);
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    font: normal 10pt arial
+}
+
+section{background-color: aliceblue;
+    color:black;
+    border-radius: 15px;/* angulacao do background*/
+    padding: 15px;  /* aumentar a borda */
+    width: 505px;  /* tamanho do background*/
+    margin: auto;
+    box-shadow: 5px 5px 10px black;
+}
+select#lista{
+    width: 100px;
+}
+footer{
+    color:white;
+    font:italic;
+    text-align: center;
+}

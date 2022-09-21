@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#area {background-color: aqua;
+                color:whitesmoke;
+                font: normal 30pt arial ;
+                width: 300px; 
+                height: 200px;
+                line-height: 180px;
+                text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        interajaaaaaaa...
+    </div>
+    
+    <script>
+        var a = document.getElementById("area") //escopo global
+
+        // com essa função é possivel mudar a interação ao clicar
+        // ou da pra fazer esta função sem utilizar o HTML, pelo javascript
+        // assim -->  a.addEventListener('click', clicar)
+        //a.addEventListener('mouseenter', clicar)
+        function clicar(){
+            a.innerText = 'Clicou'
+            a.style.background = 'green' //mudei o background
+        }
+        function sair(){
+            a.innerText = 'Saiu'
+            a.style.background = 'red'
+        }
+        function entrar(){
+            a.innerText = 'Entrou'
+            a.style.background = 'blue'
+        }
+    </script>
+</body>
+</html>
